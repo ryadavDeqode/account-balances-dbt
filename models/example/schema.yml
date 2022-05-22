@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+  - name: account_balances
+    description: "A starter dbt model"
+    columns:
+      - name: address
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
